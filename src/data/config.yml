@@ -1,0 +1,18 @@
+# Site wide settings
+site:
+  root_url: https://maxwellburton.com
+  title: Maxwell Burton
+  title_separator: —
+  meta_description: I’m a front-end web designer with back-end development experience. I value experimentation and finding innovative and interesting ways to solve design problems.
+  meta_keywords:
+    - example
+    - keyword
+  author: Maxwell Burton
+  active_navigation_item_class: current
+  analytics_id: UA-XXXXXXX-XX
+
+# Author of CSS & JavaScript
+source:
+  author:
+    name: Maxwell Burton
+    uri: https://maxwellburton.com
