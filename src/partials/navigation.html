@@ -5,20 +5,13 @@
 
 <div class="top-bar" id="main-menu">
   <div class="top-bar-left">
-    <ul class="dropdown menu" data-dropdown-menu>
-      <li class="menu-text"><a href="/">logo</a></li>
-      <li><a href="work.html">Work</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
+    <nav>
+      <ul class="dropdown menu" data-dropdown-menu>
+        <li class="menu-text"><a href="index.html" class="{{#ifpage 'index'}}current{{/ifpage}}">Home</a></li>
+        <li><a href="work.html" class="{{#ifpage 'work'}}current{{/ifpage}}">Work</a></li>
+        <li><a href="about.html" class="{{#ifpage 'about'}}current{{/ifpage}}">About</a></li>
+        <li><a href="contact.html" class="{{#ifpage 'contact'}}current{{/ifpage}}">Contact</a></li>
+      </ul>
+    </nav>
   </div>
 </div>
-
-<nav>
-  <ul class="menu">
-    <li><a href="/">Home</a></li>
-    <li><a href="work">Work</a></li>
-    <li><a href="#">Three</a></li>
-    <li><a href="#">Four</a></li>
-  </ul>
-</nav>
