@@ -1,18 +1,17 @@
 ---
 title: im|material
-sub_title: A crowdsourced community arts publication
+sub_title: An independent arts publication
 home_intro: "See how we constructed a beautiful website for Pantera Carpentry"
 url: immaterial
 description: I’m a front-end web designer with back-end development experience. I value experimentation and finding innovative and interesting ways to solve design problems.
-intro: "<p>Pantera needed an online presence that matched their impeccable reputation for high-quality carpentry and stellar health and safety ratings. They needed it all in an easy-to-update website.</p> <p>They also needed a space to recruit new talent, display their beautiful work and show off their amazing achievements (they have just won the UK's Homebuilder's Award two years in a row). This website was designed to let their attention to detail and quality craftmanship shine.</p>"
-sub_text: "We have worked with the Pantera Group over the past 2 years to develop this website and will soon launch their custom wardrobe site. The system is built on WordPress so that they can easily add new projects, create news posts, update the map or change text."
+intro: "<p>While involved with the project I worked with a diverse group of visual communication, printmaking and other students in the  ne arts. My responsibilities included co-managing the project, setting up a nonpro t organization, video production, designing print material, designing and developing a website for the project.</p>"
+sub_text: "While involved with the project I worked with a diverse group of visual communication, printmaking and other students in the  ne arts. My responsibilities included co-managing the project, setting up a nonpro t organization, video production, designing print material, designing and developing a website for the project."
 what_i_did:
-  - Web design
-  - Responsive build
-  - WordPress multi-site
-  - Map integration
-image_path: work/immaterial
-image_featured: bookCover.jpg
+  - Project Manager
+  - Designer
+  - Web Developer
+image_path: ../assets/img/work/immaterial
+image_featured: bookCoverMultipleFour.jpg
 image_thumb: pantera-thumb.jpg
 sections:
   # Project planning
@@ -20,48 +19,62 @@ sections:
     anchor: project-planning
     description: I’m a front-end web designer with back-end development experience. I value experimentation and finding innovative and interesting ways to solve design problems.
     images:
-      - pantera-mobile.jpg
-      - pantera-contact.jpg
-      - pantera-projects.jpg
-      - pantera-project.jpg
-      - pantera-what-we-do.jpg
+      - timelineOne.png
   - title: Brand development
     anchor: brand-development
     description: I’m a front-end web designer with back-end development experience. I value experimentation and finding innovative and interesting ways to solve design problems.
     images:
-      - pantera-mobile.jpg
-      - pantera-contact.jpg
-      - pantera-projects.jpg
-      - pantera-project.jpg
-      - pantera-what-we-do.jpg
+      - logoLongOne.jpg
+      - logoSqureOne.webp
+      - brandStyleGuideOne.jpg
   - title: Campaign material
     anchor: campaign-material
     description: I’m a front-end web designer with back-end development experience. I value experimentation and finding innovative and interesting ways to solve design problems.
     images:
-      - pantera-mobile.jpg
-      - pantera-contact.jpg
-      - pantera-projects.jpg
-      - pantera-project.jpg
-      - pantera-what-we-do.jpg
+      - herronRenderOne.png
+      - herronRenderTwo.png
+      - herronRenderThree.png
+      - herronRenderFour.png
+      - posterThree.png
+      - posterFive.png
+      - posterSix.png
+      - posterSeven.png
+      - posterEight.png
+      - posterNine.png
+      - posterTen.png
+      - posterEleven.png
+      - posterTwelve.png
   - title: Website development
     anchor: website-development
     description: I’m a front-end web designer with back-end development experience. I value experimentation and finding innovative and interesting ways to solve design problems.
     images:
-      - pantera-mobile.jpg
-      - pantera-contact.jpg
-      - pantera-projects.jpg
-      - pantera-project.jpg
-      - pantera-what-we-do.jpg
+      - siteMapOne.jpg
+      - siteWireFrameSketchOne.jpg
+      - siteWireFrameSketchTwo.jpg
+      - siteWireFrameSketchThree.jpg
+      - siteWireFrameSketchFour.jpg
+      - siteWireFrameSketchFive.jpg
+      - siteWireFrameSketchSix.jpg
+      - siteWireFrameComplexOne.jpg
+      - siteWireFrameComplexTwo.jpg
+      - siteWireFrameComplexThree.jpg
+      - siteGalleryWireFrameOne.png
+      - siteGalleryWireFrameTwo.jpg
   - title: Completed book
     anchor: completed-book
     description: I’m a front-end web designer with back-end development experience. I value experimentation and finding innovative and interesting ways to solve design problems.
     images:
-      - pantera-mobile.jpg
-      - pantera-contact.jpg
-      - pantera-projects.jpg
-      - pantera-project.jpg
-      - pantera-what-we-do.jpg
+      - bookCoverProcessOne.jpg
+      - bookCoverProcessTwo.jpg
+      - bookCoverProcessThree.jpg
+      - bookCover.jpg
+      - bookInnerOne.jpg
+      - bookInnerTwo.jpg
+      - bookInnerThree.jpg
+      - bookMultipleTwo.jpg
 ---
+
+<img src="{{ image_path }}/{{ image_featured }}" alt="main article image">
 
 <section class="work work-item">
 
@@ -78,18 +91,18 @@ sections:
 
   <div class="work-content">
 
-    {{# if intro}}
+    {{# if intro }}
       <div class="work-intro">
         <h3>The project</h3>
         {{ intro }}
       </div>
     {{/if}}
 
-    {{# if what_i_did}}
+    {{#if what_i_did }}
       <div class="what-i-did">
         <h3>My role</h3>
         <ul>
-          {{#each what_i_did}}
+          {{#each what_i_did }}
             <li>{{ this }}</li>
           {{/each}}
         </ul>
@@ -100,15 +113,15 @@ sections:
 
   </div>
 
-  {{# if sections}}
+  {{#if sections }}
     <div class="work-sections">
-      {{#each sections}}
+      {{#each sections }}
         <div>
-          <h3>{{sections.title}}</h3>
-          <p>{{sections.description}}</p>
-          {{#each sections.images}}
+          <h3>{{ sections.title }}</h3>
+          <p>{{ sections.description }}</p>
+          {{#each sections.images }}
             <figure class="image">
-              <img src="{{image_path}}/{{this}}" alt="main article image">
+              <img src="{{ image_path }}/{{ this }}" alt="main article image">
             </figure>
           {{/each}}
         </div>
