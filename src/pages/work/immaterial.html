@@ -10,68 +10,72 @@ what_i_did:
   - Project Manager
   - Designer
   - Web Developer
-image_path: ../assets/img/work/immaterial
+image_path: ../assets/img/work/immaterial/
 image_featured: bookCoverMultipleFour.jpg
 image_thumb: pantera-thumb.jpg
 sections:
-  # Project planning
-  - title: Project planning
+  -
+    title: Project planning
     anchor: project-planning
     description: I’m a front-end web designer with back-end development experience. I value experimentation and finding innovative and interesting ways to solve design problems.
     images:
-      - timelineOne.png
-  - title: Brand development
+      - ../assets/img/work/immaterial/timelineOne.png
+  -
+    title: Brand development
     anchor: brand-development
     description: I’m a front-end web designer with back-end development experience. I value experimentation and finding innovative and interesting ways to solve design problems.
     images:
-      - logoLongOne.jpg
-      - logoSqureOne.webp
-      - brandStyleGuideOne.jpg
-  - title: Campaign material
+      - ../assets/img/work/immaterial/logoLongOne.jpg
+      - ../assets/img/work/immaterial/logoSqureOne.webp
+      - ../assets/img/work/immaterial/brandStyleGuideOne.jpg
+  -
+    title: Campaign material
     anchor: campaign-material
     description: I’m a front-end web designer with back-end development experience. I value experimentation and finding innovative and interesting ways to solve design problems.
     images:
-      - herronRenderOne.png
-      - herronRenderTwo.png
-      - herronRenderThree.png
-      - herronRenderFour.png
-      - posterThree.png
-      - posterFive.png
-      - posterSix.png
-      - posterSeven.png
-      - posterEight.png
-      - posterNine.png
-      - posterTen.png
-      - posterEleven.png
-      - posterTwelve.png
-  - title: Website development
+      - ../assets/img/work/immaterial/herronRenderOne.png
+      - ../assets/img/work/immaterial/herronRenderTwo.png
+      - ../assets/img/work/immaterial/herronRenderThree.png
+      - ../assets/img/work/immaterial/herronRenderFour.png
+      - ../assets/img/work/immaterial/posterThree.png
+      - ../assets/img/work/immaterial/posterFive.png
+      - ../assets/img/work/immaterial/posterSix.png
+      - ../assets/img/work/immaterial/posterSeven.png
+      - ../assets/img/work/immaterial/posterEight.png
+      - ../assets/img/work/immaterial/posterNine.png
+      - ../assets/img/work/immaterial/posterTen.png
+      - ../assets/img/work/immaterial/posterEleven.png
+      - ../assets/img/work/immaterial/posterTwelve.png
+  -
+    title: Website development
     anchor: website-development
     description: I’m a front-end web designer with back-end development experience. I value experimentation and finding innovative and interesting ways to solve design problems.
     images:
-      - siteMapOne.jpg
-      - siteWireFrameSketchOne.jpg
-      - siteWireFrameSketchTwo.jpg
-      - siteWireFrameSketchThree.jpg
-      - siteWireFrameSketchFour.jpg
-      - siteWireFrameSketchFive.jpg
-      - siteWireFrameSketchSix.jpg
-      - siteWireFrameComplexOne.jpg
-      - siteWireFrameComplexTwo.jpg
-      - siteWireFrameComplexThree.jpg
-      - siteGalleryWireFrameOne.png
-      - siteGalleryWireFrameTwo.jpg
-  - title: Completed book
+      - ../assets/img/work/immaterial/siteMapOne.jpg
+      - ../assets/img/work/immaterial/siteWireFrameSketchOne.jpg
+      - ../assets/img/work/immaterial/siteWireFrameSketchTwo.jpg
+      - ../assets/img/work/immaterial/siteWireFrameSketchThree.jpg
+      - ../assets/img/work/immaterial/siteWireFrameSketchFour.jpg
+      - ../assets/img/work/immaterial/siteWireFrameSketchFive.jpg
+      - ../assets/img/work/immaterial/siteWireFrameSketchSix.jpg
+      - ../assets/img/work/immaterial/siteWireFrameComplexOne.jpg
+      - ../assets/img/work/immaterial/siteWireFrameComplexTwo.jpg
+      - ../assets/img/work/immaterial/siteWireFrameComplexThree.jpg
+      - ../assets/img/work/immaterial/siteGalleryWireFrameOne.png
+      - ../assets/img/work/immaterial/siteGalleryWireFrameTwo.jpg
+  -
+    title: Completed book
     anchor: completed-book
     description: I’m a front-end web designer with back-end development experience. I value experimentation and finding innovative and interesting ways to solve design problems.
     images:
-      - bookCoverProcessOne.jpg
-      - bookCoverProcessTwo.jpg
-      - bookCoverProcessThree.jpg
-      - bookCover.jpg
-      - bookInnerOne.jpg
-      - bookInnerTwo.jpg
-      - bookInnerThree.jpg
-      - bookMultipleTwo.jpg
+      - ../assets/img/work/immaterial/bookCoverProcessOne.jpg
+      - ../assets/img/work/immaterial/bookCoverProcessTwo.jpg
+      - ../assets/img/work/immaterial/bookCoverProcessThree.jpg
+      - ../assets/img/work/immaterial/bookCover.jpg
+      - ../assets/img/work/immaterial/bookInnerOne.jpg
+      - ../assets/img/work/immaterial/bookInnerTwo.jpg
+      - ../assets/img/work/immaterial/bookInnerThree.jpg
+      - ../assets/img/work/immaterial/bookMultipleTwo.jpg
 ---
 
 <img src="{{ image_path }}/{{ image_featured }}" alt="main article image">
@@ -117,9 +121,9 @@ sections:
     <div class="work-sections">
       {{#each sections }}
         <div>
-          <h3>{{ sections.title }}</h3>
-          <p>{{ sections.description }}</p>
-          {{#each sections.images }}
+          <h3>{{ this.title }}</h3>
+          <p>{{ this.description }}</p>
+          {{#each this.images }}
             <figure class="image">
               <img src="{{ image_path }}/{{ this }}" alt="main article image">
             </figure>
