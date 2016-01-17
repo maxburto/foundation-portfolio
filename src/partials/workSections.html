@@ -1,0 +1,15 @@
+{{#if sections }}
+  <div class="work-sections">
+    {{#each sections }}
+      <div>
+        <h3>{{ this.title }}</h3>
+        <p>{{ this.description }}</p>
+        {{#each this.images }}
+          <figure class="image">
+            <img src="{{ this }}" alt="main article image">
+          </figure>
+        {{/each}}
+      </div>
+    {{/each}}
+  </div>
+{{/if}}

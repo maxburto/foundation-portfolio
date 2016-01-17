@@ -10,8 +10,7 @@ what_i_did:
   - Project Manager
   - Designer
   - Web Developer
-image_path: ../assets/img/work/immaterial/
-image_featured: bookCoverMultipleFour.jpg
+image_featured: ../assets/img/work/immaterial/bookCoverMultipleFour.jpg
 image_thumb: pantera-thumb.jpg
 sections:
   -
@@ -78,59 +77,11 @@ sections:
       - ../assets/img/work/immaterial/bookMultipleTwo.jpg
 ---
 
-<img src="{{ image_path }}/{{ image_featured }}" alt="main article image">
-
 <section class="work work-item">
 
-  <header class="work-header">
-
-    <h1>{{ title }}</h1>
-    {{ sub_title }}
-
-    <p>{{ home_intro }}</p>
-
-  </header>
-
-  <!-- client navigation partial (next/prev) -->
-
-  <div class="work-content">
-
-    {{# if intro }}
-      <div class="work-intro">
-        <h3>The project</h3>
-        {{ intro }}
-      </div>
-    {{/if}}
-
-    {{#if what_i_did }}
-      <div class="what-i-did">
-        <h3>My role</h3>
-        <ul>
-          {{#each what_i_did }}
-            <li>{{ this }}</li>
-          {{/each}}
-        </ul>
-      </div>
-    {{/if}}
-
-    <hr>
-
-  </div>
-
-  {{#if sections }}
-    <div class="work-sections">
-      {{#each sections }}
-        <div>
-          <h3>{{ this.title }}</h3>
-          <p>{{ this.description }}</p>
-          {{#each this.images }}
-            <figure class="image">
-              <img src="{{ image_path }}/{{ this }}" alt="main article image">
-            </figure>
-          {{/each}}
-        </div>
-      {{/each}}
-    </div>
-  {{/if}}
+  {{> workHero}}
+  {{> workHeader}}
+  {{> workContent}}
+  {{> workSections}}
 
 </section>

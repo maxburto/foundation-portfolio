@@ -1,0 +1,23 @@
+<div class="work-content">
+
+  {{# if intro }}
+    <div class="work-intro">
+      <h3>The project</h3>
+      {{ intro }}
+    </div>
+  {{/if}}
+
+  {{#if what_i_did }}
+    <div class="what-i-did">
+      <h3>My role</h3>
+      <ul>
+        {{#each what_i_did }}
+          <li>{{ this }}</li>
+        {{/each}}
+      </ul>
+    </div>
+  {{/if}}
+
+  <hr>
+
+</div>
