@@ -1,5 +1,11 @@
-<ul class="workItems">
-  {{#each workItems.clients}}
-    <li>{{ this.name }}</li>
+<div class="featured-projects">
+  <h2>Featured Projects</h2>
+  {{#each config.work_project_list}}
+    <article class="ft-{{ this.url }}">
+      <a href="/work/{{ this.url }}.html" class="work-link">
+        <img src="/assets/img/work/{{ this.url }}/{{ this.thumbnail }}.jpg" alt="{{ this.name }}: {{ this.sub_name }}">
+        <h3>{{ this.sub_name }}</h3>
+      </a>
+    </article>
   {{/each}}
-</ul>
+</div>

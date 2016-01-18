@@ -16,3 +16,33 @@ source:
   author:
     name: Maxwell Burton
     uri: https://maxwellburton.com
+
+# Sitemap for navigation
+site_map:
+  - page_name: Work
+    page_url: work.html
+  - page_name: About
+    page_url: about.html
+  - page_name: Contact
+    page_url: contact.html
+
+# Project item list for work list and navigation
+work_project_list:
+  - name: im|material
+    sub_name: An independent arts publication
+    url: immaterial
+    list_order: 0
+    featured: true
+    thumbnail: immaterialThumbnail
+  - name: Ghyslain
+    sub_name: A modern secure, responsive e-commerce website
+    url: ghyslain
+    list_order: 1
+    featured: true
+    thumbnail: ghyslainThumbnail
+  - name: GoNewmar Microsite
+    sub_name: An event microsite with a user photo submission component
+    url: newmar-microsite
+    list_order: 2
+    featured: true
+    thumbnail: newmarMicrositeThumbnail
