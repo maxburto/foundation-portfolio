@@ -45,4 +45,4 @@ work_project_list:
     url: newmar-microsite
     list_order: 2
     featured: true
-    thumbnail: newmarMicrositeThumbnail
+    thumbnail: GoNewmarThumbnail
