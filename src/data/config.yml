@@ -46,3 +46,9 @@ work_project_list:
     list_order: 2
     featured: true
     thumbnail: GoNewmarThumbnail
+  - name: Population Movements
+    sub_name: A research project investigating population movements within the Indianapolis metropolitan area during the 20th century
+    url: population-movements
+    list_order: 3
+    featured: true
+    thumbnail: populationMovementsThumbnail
