@@ -4,11 +4,28 @@
       <div>
         <h3>{{ this.title }}</h3>
         <p>{{ this.description }}</p>
-        {{#each this.images }}
-          <figure class="image">
-            <img src="{{ this }}" alt="main article image">
-          </figure>
-        {{/each}}
+        {{#ifEq this.type 'image-full'}}
+          <p>image-full on</p>
+          {{#each this.images }}
+            <figure class="image">
+              <img src="{{ this }}" alt="main article image">
+            </figure>
+          {{/each}}
+        {{else}}
+          <p>image-full off</p>
+        {{/ifEq}}
+        {{#ifEq this.type 'image-grid'}}
+          <p>image-grid on</p>
+          <div class="row small-up-2 medium-up-3 large-up-3">
+            {{#each this.images }}
+              <figure class="column">
+                <img src="{{ this }}" alt="main article image">
+              </figure>
+            {{/each}}
+          </div>
+        {{else}}
+          <p>image-grid off</p>
+        {{/ifEq}}
       </div>
     {{/each}}
   </div>
