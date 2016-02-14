@@ -52,3 +52,9 @@ work_project_list:
     list_order: 3
     featured: true
     thumbnail: populationMovementsThumbnail
+  - name: ConnectRad
+    sub_name: A research project investigating population movements within the Indianapolis metropolitan area during the 20th century
+    url: connect-rad
+    list_order: 4
+    featured: true
+    thumbnail: connectRadThumbnail
